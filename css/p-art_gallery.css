@@ -9,6 +9,7 @@
     --bg-secondary: #403D39;
 }
 body {
+	overflow-x: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -47,13 +48,13 @@ p{
 	 border-radius: 5px;
 	 transition: all 0.5s ease-in-out;
 }
- .grid-container div:hover img {
+ .grid-container div:hover a img {
 	 filter: grayscale(0);
 }
  .grid-container div:hover {
 	 border-color: var(--accent-primary);
 }
- .grid-container div img {
+ .grid-container div a img {
 	 width: 100%;
 	 filter: grayscale(100%);
 	 border-radius: 5px;
@@ -65,4 +66,9 @@ p{
 	 text-align: center;
 	 font-style: italic;
 }
- 
+
+.image-link {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in;
+}

@@ -302,3 +302,6 @@ a:hover {
 p{
   color: var(--text-secondary)
 }
+span{
+  color:#f0c195;
+}
