@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
 :root{
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -67,11 +68,15 @@ body::-webkit-scrollbar-thumb{
 	text-align: center;
 	color: white;
 }
+
+
 .landing-text {
-	font-family: 'Roboto', sans-serif;
-	font-size: 5rem;
-	color:#f1f1f1;
-	font-weight: 800;
+	background: #282c34;
+	font-size: 2vmin;
+	font-family: JetBrains Mono, monospace;
+	justify-content: center;
+	align-items: center;
+	color: #e4bb68;
 
 	position: absolute;
 	/* top: 50%;*/
@@ -81,13 +86,57 @@ body::-webkit-scrollbar-thumb{
 	transform: translate(-50%, -50%);
 	z-index: 10;
 }
+.string {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: move 4s infinite;
+}
+
+.greeting {
+  position: relative;
+  top: 8.6vmin;
+  animation: white-out 5s infinite;
+}
+
+.closure::after {
+  content: '';
+  position: absolute;
+  height: 25vmin;
+  width: 40vmin;
+  background: #282c34;
+  transform: translate(-45vmin, -24.5vmin);
+}
+
+.closure::before {
+  content: '';
+  position: absolute;
+  height: 25vmin;
+  width: 40vmin;
+  background: #282c34;
+  transform: translate(-40vmin, 5vmin);
+}
+
+@keyframes move {
+  25% {
+    transform: translatey(-5.8vmin);
+    opacity: 1;
+  }
+  50% {
+    transform: translatey(-11vmin);
+  }
+  75% {
+    transform: translatey(-16.5vmin);
+  }
+}
+
 
 .landing-img{
 	height:100vh;
 	width:100%;
 	object-fit: cover;
 
-	background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/04/Summer-wallpapers-high-quality-free-download.jpg");
+	background-image: url("https://www.solidbackgrounds.com/images/2560x1440/2560x1440-pastel-brown-solid-color-background.jpg");
 
   /* Set a specific height */
   	min-height: 500px; 
@@ -263,7 +312,7 @@ body::-webkit-scrollbar-thumb{
 }
 .banner-title {
 	animation: animate 1s 1;
-	font-weight: 900;
+	font-weight: 700;
 	padding-top: calc(1rem + 3vw) ;  
 }
 
