@@ -7,9 +7,6 @@
                      fixedContentPos: true
  });
 
-$( document ).ready(function() {
-    console.log( "ready!" );
-});
 
 $('.image-zoom').magnificPopup({
 		type: 'image',
@@ -24,3 +21,8 @@ $('.image-zoom').magnificPopup({
 			duration: 300 // don't foget to change the duration also in CSS
 		}
 });
+
+$(function(){
+    $("#neon-button").toggle();
+    $("#neon-button").fadeIn(1200);
+})
