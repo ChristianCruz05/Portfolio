@@ -1,4 +1,12 @@
 :root {
+
+    font-family: 'Roboto', sans-serif;
+    --text-primary: #FFFCF2;
+    --text-secondary: #CCC5B9;
+    --accent-primary: #E18937;
+    --accent-secondary: #335C67;
+    --bg-primary: #252422;
+    --bg-secondary: #403D39;
 	--card-height: 40vw;
 	--card-margin: 4vw;
 	--card-top-offset: 1em;
@@ -105,8 +113,8 @@
 }
 
 body {
-	background: rgb(58 29 43);
-	color: rgb(255, 255, 255);
+	background: var(--bg-primary);
+	color: var(--text-primary);
 	text-align: center;
 
 	font-size: calc(1em + 0.5vw);
@@ -135,10 +143,11 @@ header {
 }
 
 .card {
-	outline: var(--outline-width) solid hotpink;
+	outline: var(--outline-width) solid var(--accent-primary);
 }
 
 .card__content {
+	padding: 0.5em;
 	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
 	background: rgb(255, 255, 255);
 	color: rgb(10, 5, 7);
@@ -177,19 +186,20 @@ header {
 }
 
 h1 {
-	font-weight: 300;
-	font-size: 3.5em;
+	font-weight: 400;
+	font-size: 2.5em;
 }
 
 h2 {
 	font-weight: 300;
-	font-size: 2.5em;
+	font-size: 1.5em;
 }
 
 p {
 	font-family: sans-serif;
-	font-weight: 300;
+	font-weight: 200;
 	line-height: 1.42;
+	font-size: 1rem;
 }
 
 .btn {
@@ -198,6 +208,7 @@ p {
 	text-decoration: none;
 	display: inline-block;
 	padding: 0.5em;
+	margin-bottom: 0.5em;
 	border-radius: 0.25em;
 }
 
@@ -209,4 +220,8 @@ aside {
 
 aside p {
 	margin-bottom: 1em;
+}
+.filler{
+	visibility: hidden;
+	height: 100vh;
 }
