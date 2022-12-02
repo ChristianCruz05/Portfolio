@@ -152,6 +152,9 @@ body::-webkit-scrollbar-thumb{
 	
 
 }
+.landing-title{
+	font-weight: 700;
+}
 
 .navbar .getstarted {
 	background: #106eea;
@@ -217,6 +220,7 @@ body::-webkit-scrollbar-thumb{
 	.img-area img {
 		width: 100%;
 	}
+	
 
 }
 @media only screen and (max-width: 767px) {
@@ -243,6 +247,9 @@ body::-webkit-scrollbar-thumb{
 	}
 	.card {
 		margin-bottom: 30px;
+	}
+	.landing-title{
+		font-size: 2.5rem;;
 	}
 }
 
@@ -462,4 +469,14 @@ footer {
 }
 .footer-link li a:hover{
 	color:var(--accent-primary)!important
+}
+.btn-footer{
+	background-color: var(--bg-primary);
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
