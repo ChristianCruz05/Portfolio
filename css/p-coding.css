@@ -247,7 +247,7 @@ a:hover {
   }
   .timeline-centered .timeline-info, .timeline-centered .timeline-content {
     width: 50%;
-    
+
   }
   .timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
     float: left;
@@ -330,6 +330,7 @@ span{
 }
  .grid-container div:hover a img {
 	 filter: grayscale(0);
+   filter:brightness(100%);
 }
  .grid-container div:hover {
 	 border-color: var(--accent-primary);
@@ -337,6 +338,7 @@ span{
  .grid-container div a img {
 	 width: 100%;
 	 filter: grayscale(100%);
+   filter:brightness(20%);
 	 border-radius: 5px;
 	 transition: all 0.5s ease-in-out;
 }
@@ -351,4 +353,36 @@ span{
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
   cursor: zoom-in;
+}
+.image-a{
+  position: relative;
+  min-height: 150px;
+
+}
+.image-a p{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color:#FFFCF2
+}
+
+.image-b{
+  position: relative;
+  min-height: 150px;
+
+}
+.image-b p{
+
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color:#FFFCF2
+}
+
+img{
+  height:100%;
 }
