@@ -307,9 +307,9 @@ span{
 
 .grid-container {
   display: grid;
-	 columns: 2 2em;
+	 columns: 1 ;
 	 /* column-gap: 1.5rem; */
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr;
 	 width: 90%;
 
 	 /* margin: 100px auto; */
@@ -326,8 +326,7 @@ span{
 	 border-radius: 5px;
 	 transition: all 0.5s ease-in-out;
 }
-.image-b{
-}
+
  .grid-container div:hover a img {
 	 filter: grayscale(0);
    filter:brightness(100%);
@@ -357,32 +356,21 @@ span{
 .image-a{
   position: relative;
   min-height: 150px;
-
-}
-.image-a p{
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  font-size: 1rem;
-  color:#FFFCF2
+  width: 25rem !important;
 }
 
-.image-b{
-  position: relative;
-  min-height: 150px;
-
+.timeline{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.image-b p{
-
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  font-size: 1rem;
-  color:#FFFCF2
+@media (min-width: 992px) {
+.timeline{
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
+}
+p {
+  margin: 0;
+  font-size: -webkit-calc(100% + 2px);
 
-img{
-  height:100%;
 }
