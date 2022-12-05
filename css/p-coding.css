@@ -1,4 +1,4 @@
-@import url("../css/fancy_button.css");
+
 :root{
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -77,7 +77,7 @@ a:hover {
   text-align: center;
   margin-bottom: 60px;
   padding: 3em 0;
-  border-bottom: 1px solid #E4EAEC;
+
 }
 .example-title p {
   margin: 0 auto;
@@ -314,9 +314,9 @@ span{
 
 .grid-container {
   display: grid;
-	columns: 1 ;
+	/* columns: 1 ; */
 	 /* column-gap: 1.5rem; */
-   grid-template-columns: 1fr;
+   /* grid-template-columns: 1fr; */
 	 width: 100%;
 
 	 /* margin: 100px auto; */
@@ -353,7 +353,7 @@ span{
  .grid-container div p {
 	 margin: 5px 0;
 	 padding: 0;
-	 text-align: justify;
+	 text-align: center;
 	 font-style: italic;
 }
 .btn-wrapper{
@@ -370,7 +370,8 @@ span{
 .image-a{
   position: relative;
   min-height: 150px;
-  width: 90% !important;
+  width: 100% !important;
+  margin:auto;
 }
 
 .timeline{
@@ -379,17 +380,26 @@ span{
 }
 @media (min-width: 992px) {
 .timeline{
-  padding-left: 15rem;
+  
+  
+  /* padding-left: 15rem;
   padding-right: 15rem;
+   */
 }
 .image-a{
   position: relative;
   min-height: 150px;
-  width: 45rem !important;
+  width: 90%;
 }
 }
 p {
   margin: 0;
-  font-size: -webkit-calc(100% + 2px);
+  font-size: -webkit-calc(100% + 4px);
 
 }
+/* .wrapper-timeline-items{
+  width:100%;
+  margin: auto;
+  min-height: 150px;
+
+} */
